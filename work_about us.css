@@ -1,0 +1,121 @@
+body{
+
+    height: 1700px;
+    font-family: sans-serif;
+}
+.headr{
+ background-color: rgb(196, 220, 216);
+ height: 40px;
+ width: 100%; 
+ padding-top: 0px;
+}
+.header{
+    background-color:papayawhip ;
+    width: 100%;
+    height: 100%;
+    padding-top: 1px;
+}
+.header-logo{
+    display: flex;
+    justify-content: center; 
+}
+.item{
+     padding: 15px; 
+    list-style: none;
+    font-size:20px;
+}
+.contain-img{
+    background-image:url(postive-caring-relationships-teachers\ 1.png);
+    height: 80vh;
+    width: 100%;
+}
+.about{
+    color: white;
+   padding: 90px;
+   text-align: center;
+   justify-content: center;
+}
+.h1-tag{
+    font-size: 80px;
+}
+.p-tag{
+    font-size: 30px;
+    font-family: sans-serif;
+    margin: 0%;
+}
+.about{
+    text-align: center;  
+}
+.buttonclass{
+    background-color: yellow;
+    font-size: 20;
+    border: none;
+    border-radius: 3;
+}
+.h1class{
+    text-align: center;
+}
+.div-tag{
+    /* background-image: url(image\ 1.png); */
+    display: flex;
+     justify-content: center; 
+  
+
+}
+.h2-tag{
+    font-size: 30px;
+}
+.button2-tag{
+    background-color: yellow;
+}
+
+.div-tag1{
+    /* background-image: url(image\ 1.png); */
+    display: flex;
+     justify-content: center; 
+  
+
+}
+.h2-tag1{
+    font-size: 30px;
+}
+.button2-tag1{
+    background-color: yellow;
+}
+.tottal-class{
+    margin: 55px;
+    padding: 50px;
+}
+.divi2{
+    display: flex;
+    justify-content: center;
+    
+}
+.h11{
+    text-align: center;
+}
+.fieldset1{
+    background-color: antiquewhite;
+}
+.imga{
+    justify-content: center;
+}
+.div4{
+    display: flex;
+    justify-content: center;
+ 
+      
+}
+.h1last{
+    padding-top: 15%;
+    text-align: center;
+}
+#target{
+    background-color: antiquewhite;
+   height: 600px;
+}
+#divid{
+    align-items: center;
+    text-align: center;
+    max-height: 10px;
+}
