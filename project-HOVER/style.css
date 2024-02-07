@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-size: 25px;
+    background-color: #1c2736;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block; 
+    position: relative;
+}
+
+a::before, a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: rgb(232, 244, 176);
+    transition: 0.2s;
+    transition-delay: 0.2s;
+}
+
+a::before {
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+}
+
+a::after {
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+}
+
+a:hover::before {
+    width: 100%;
+    transition-delay: 0s;
+}
+
+a:hover::after {
+    width: 100%;
+    transition-delay: 0s;
+}
+
+span {
+    display: block;
+    background-color: #233855;
+    padding: 6px 50px;
+}
+
+span::before, span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: rgb(232, 244, 176);
+    transition: 0.2s;
+    transition-delay: 0s;
+}
+
+span::before {
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0;
+}
+
+span::after {
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 0;
+}
+
+a:hover span::before {
+    height: 100%;
+    transition-delay: 0.2s;
+}
+
+a:hover span::after {
+    height: 100%;
+    transition-delay: 0.2s;
+}
