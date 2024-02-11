@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+ padding: 6px;
+ margin: 0;
+ background-color: beige;
+}
+#logo{
+ height: 30px;
+}
+
+#banner{
+    object-fit: cover;
+    width: 100%;
+    height:400px;
+}
+h1{
+    text-align: center;
+    color: rgb(10, 64, 64);
+}
+.about{
+    display: flex;
+  max-width:800px ;
+  margin: 0 auto;
+  padding:0 8px;
+ 
+}
+.des{
+    width: 50%;
+    padding: 0 18px;  /* top bottom 0*/
+}
+.picture{
+    width: 50%;
+
+}
+#picture-img{
+    border-radius: 7px;
+    width: 100%;
+}
+.location{
+    color: rgb(142, 139, 136);
+}
+h2{
+    text-align: center;
+}
+h3{
+    margin-bottom: 4px;
+    margin-top: 0px;
+}
+.job{
+    max-width: 800px;
+    margin:0 auto;
+    padding: 0 8px;
+}
+.apply{
+    float: right;
+}
+
+#footer{
+    background-color: rgb(226, 221, 221);
+    padding: 8px;
+    margin-top: 30px;
+    text-align: center;
+}
+#footer-tag{
+    list-style: none;
+    /* display: flex; */
+    /* text-align: center; */
+}
+#footer-tag li{
+    display: inline;
+    margin: 0 16px;
+}
+.copywrite{
+    color: gray;
+}
+
+/* static.app */
