@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom learning</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: white
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <div class="bg-black">
+        <h1 class="heading">dom learning on israt</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="parent">
+            <div class="day">Monday</div>
+            <div class="day">Tuesday</div>
+            <div class="day">Wednesday</div>
+            <div class="day">Thursday</div>
+        </div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    console.log(parent)
+    console.log(parent.children)
+
+    for(let i = 0 ; i < parent.children.length; i++){
+        console.log(parent.children[i].innerHTML);
+    }
+    parent.children[1].style.color = "orange";
+    console.log(parent.firstElementChild);
+    const div = document.createElement('h1');
+    console.log(div);
+    div.setAttribute("title","general title")
+   // div.innerHTML = "hello israt"
+    div.style.color = "white"
+
+    const addtext = document.createTextNode("hello israt");
+    div.appendChild(addtext)
+    document.body.appendChild(div)
+</script>
+</html>
