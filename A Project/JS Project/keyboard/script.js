@@ -4,14 +4,14 @@ window.addEventListener('keydown', (e) => {
     <div class='color'>
 <table>
   <tr>
-    <th>Company</th>
+    <th>key</th>
     <th>Contact</th>
     <th>Country</th>
   </tr>
   <tr>
-    <td>${Company}</td>
-    <td>${Contact}</td>
-    <td>${Country}</td>
+    <td>${e.key === ' '? 'Space' : e.key}</td>
+    <td>${e.Contact}</td>
+    <td>${e.Country}</td>
   </tr>
 
 </table>
