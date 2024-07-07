@@ -1,0 +1,21 @@
+{
+    "name": "index.js",
+    "version": "1.0.0",
+    "description": "this is testing npm",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "hello"
+    ],
+    "author": "israt jahan",
+    "license": "ISC",
+    
+      "dependencies": {
+        "l": "^0.6.0",
+        "random-fruits-name": "^1.10.1"
+      }
+    
+  }
+  
