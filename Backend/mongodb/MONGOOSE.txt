@@ -1,0 +1,70 @@
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>=================================MONGODB=============================================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+check version:
+mongod --version
+mongosh
+
+Document oriented database system
+database-database(usersDB)
+tables = collections
+rows = documents
+columns = fields
+
+run the mongoshell - mongo+enter
+help
+database:
+show dbs
+create and switch db you are in : use databaseName
+check witch database you are in : db+enter
+delete db : db.dropDatabase()
+collection:
+show collection
+db.createCollection(name, options)
+
+check version:
+mongod --version
+mongosh
+
+-show dbs
+-use studentDb                                            (create database which name is studentDB)
+-bd (where am i in bd)
+-db. createCollection ("students")
+-show collections
+-show dbs
+-db.dropDatabase()                                                           (delete database)
+
+collection a data insert::
+-db.student.insertOne({name: "israt jahan", age : 31, laguages:["bangla", "arby", "english"]}) 
+                    (student is collections name)
+- db.student.insertMany([{name: "ruble", age : 30, languages:["bangla", "urdu", "ict"]}, {name: "rahul", age : 301, languages:["bangla1", "urdu1", "ict1"]}, {name: "rana", age : 20, languages:["english", "osu", "computer"]}])
+-db.student.find()     (full collections dekha jabe + documents)
+-db.student.find().pretty()
+-db.student.find({name: "israt jahan"})
+-db.student.find({age: 31})
+-db.student.find({age:31}).limit(1)                                                            (how many document i can see)
+-db.student.find({age : 31}).limit(1).pretty()
+
+-db.students.update({age:20},{$set:{age: 21}})                                                      (update)
+-db.students.deleteOne({name:"hello_israt"})                                                        (delete)
+
+when use mongodb compass then-------------->
+{
+  "_id": {
+    "$oid": "66bcb7f58ef77497132a4c88"
+  },
+  "name" : "hello_israt jahan",
+  "age":22,
+  "language" :["bangla", "english", "hindi"]
+}
+
+connect mongoose -7tutorial---------------->>>>
+
+npm init -y
+npm install express
+npm install express -D nodemon
+npm install mongoose
+
+{  connect mongodb
+mongoose.connect("mongodb://localhost:27017/test")
+lesson 1 follow mongodb;
+}
